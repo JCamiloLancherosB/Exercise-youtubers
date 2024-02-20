@@ -36,3 +36,147 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  height: 20px;
+  width: 20px;
+  color: azure;
+}
+
+#botones {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1 100px;
+  grid-template-rows: repeat(3, 100px);
+  justify-content: space-around;
+  align-items: center;
+  left: 70px;
+  /* background-color: #496eb9; */
+  background: rgb(81,21,149);
+  background: linear-gradient(90deg, rgba(81,21,149,1) 0%, rgba(9,29,110,1) 100%);
+  border-radius: 0px 6px 6px 0px;
+  border: 2px solid #300766;
+  height: 300px;
+  top: -2px;
+}
+
+.redes {
+  margin: 10px;
+  bottom: 10px;
+  height: 50px;
+  width: 50px;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.redes:nth-child(1) {
+  background-image: url('../Imgs/linkedin.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.redes:nth-child(2) {
+  background-image: url('../Imgs/youtube.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.redes:nth-child(3) {
+  background-image: url('../Imgs/logotipos.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.aumDis {
+  position: relative;
+  background: rgb(97,0,208);
+  background: linear-gradient(90deg, rgba(97,0,208,1) 0%, rgba(0,212,255,1) 100%);
+  top: 100px;
+  height: 50px;
+  width: 85px;
+  color: whitesmoke;
+  cursor: pointer;
+  margin: 0px 80px 0px 80px;
+}
+
+#contadores {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  right: 40px;
+  width: 30%;  
+}
+
+#contadores>div:nth-child(n) {
+  border: 1px solid white;
+  margin-bottom: 45px;
+  height: 300px;
+  text-align: center;
+}
+
+/* #contador {
+  top: 24.5px;
+  right: 5px;
+  width: 300px;
+  top: 10px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px 10px 30px 10px;
+  justify-self: end;
+} */
+
+#perfiles {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-principal {
+  /* display: grid;
+  grid-template-rows: 200px, 500px, 500px;
+  grid-template-columns: 20%, 20%, 20%, 20%, 20%,;
+  grid-template-areas: 
+  "h1 h1 h1 h1 h1"
+  "perfil perfil perfil perfil counter"
+  "perfil perfil perfil perfil counter";
+  ; */
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.contenedor-perfil {
+  border: 2px solid #300766;
+  border-radius: 6px;
+}
+/* 
+h1 {
+  grid-area: h1;
+} */
+
+.contenedor-texto-perfil {
+  width: 700px;
+}
+
+.profile {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#contador p {
+  font-size: x-large;
+}
+
+#contador {
+  background: rgb(81,21,149);
+  background: linear-gradient(90deg, rgba(81,21,149,1) 0%, rgba(9,29,110,1) 100%);
+  border-radius: 6px;
+}
+
+body {
+  background-color: #FFEFD5;
+}
