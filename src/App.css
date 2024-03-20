@@ -146,12 +146,16 @@ button {
   ; */
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 50%;
 }
 
 .contenedor-perfil {
   border: 2px solid #300766;
   border-radius: 6px;
+}
+
+.contenedor-perfil img {
+  width: 300px;
 }
 /* 
 h1 {

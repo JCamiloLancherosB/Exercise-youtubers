@@ -17,11 +17,10 @@ function Perfil(props){
     
     // }
     
-    let contador = 0;
     return(
         <div className='contenedor-perfil'>
             <img className='imagen-perfil'
-            src={require(`../imagenes/perfil-${props.imagen}.png`)}
+            src={require(`../../Imgs/perfil-${props.imagen}.png`)}
             alt='Foto de desarrollador' />
         <div className='contenedor-texto-perfil'>
             <p className='nombre-perfil'>
@@ -30,30 +29,21 @@ function Perfil(props){
         <p className='cargo-perfil'>
             {props.cargo} en <strong>{props.empresa}</strong>
         </p>
-        <p className='texto-perfil'>"{props.perfil}" </p>
+        <p className='texto-perfil'>"{props.resena}" </p>
         </div>
 
         { /* BOTONES REDES SOCIALES */}
         <div id="botones">            
         <button className="redes" onClick={() => {
-            window.open(props.linkedin, "_blank");            
-            contador += 1;
-            const visit = document.querySelector('#contador p');
-            visit.innerHTML += contador+1;
+            window.open(props.linkedin, "_blank");
         }}>
         </button>
         <button className="redes" onClick={() => {
             window.open(props.youtube, "_blank");
-            // contador += 1;
-            // const visit = document.querySelector('#contador p');
-            // visit.innerHTML = contador;
         }}>
         </button>
         <button className="redes" onClick={() => {
             window.open(props.x, "_blank");
-            // contador += 1;
-            // const visit = document.querySelector('#contador p');
-            // visit.innerHTML = contador;
         }}>
         </button>   
         </div>         

@@ -3,8 +3,8 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import Perfil from './componentes/Perfil';
 import Contador from './componentes/contador'
-import { computeHeadingLevel } from '@testing-library/react';
-import Perfiles from './perfiles.json'
+// import { computeHeadingLevel } from '@testing-library/react';
+// import Perfiles from './perfiles.json'
 
 function App() {
   const [contador, setContador] = useState(0);
@@ -49,42 +49,29 @@ function App() {
     <div className='contenedor-principal'>
       <h1>Mis desarrolladores favoritos son</h1>
       <div id="brais" className="profile">
-      <Perfil 
+      <Perfil
         nombre='Brais Moure'
         pais='España'
         imagen='brais'
         cargo='Ingeniero de Software'
-        empresa='MoureDev'
-        perfil='Es un Youtuber español, es el fundador de la empresa de desarrollo de software MoureDev'
-        linkedin='https://www.linkedin.com/in/braismoure/'
-        youtube='https://www.youtube.com/@mouredev'
-        twitter='https://twitter.com/mouredev/'
+        empresa='Fundador de Moure Dev'
+        resena='Ha desarrollado más de 100 aplicaciones y ha trabajado en diferentes proyectos nacionales e internacionales'
+        />
+      <Perfil
+        nombre='Facundo Garcia Martoni'
+        pais='Argentina'
+        imagen='facundo'
+        cargo='Profesional en Tecnología'
+        empresa='Youtuber en Tecnologia'
+        resena='Tiene un canal de Youtube con mas de 6.81K suscriptores, donde publica videos sobre diversos temas, incluyendo historias de hackers, explicaciones de virus informáticos y más.  También tiene una presencia activa en GitHub '
       />
-      </div>
-      <div id="otro" className="profile">
-      <Perfil 
-        nombre='Brais Moure'
-        pais='España'
-        imagen='brais'
-        cargo='Ingeniero de Software'
-        empresa='MoureDev'
-        perfil='Es un Youtuber español, es el fundador de la empresa de desarrollo de software MoureDev'
-        linkedin='https://www.linkedin.com/in/braismoure/'
-        youtube='https://www.youtube.com/@mouredev'
-        twitter='https://twitter.com/mouredev/'
-      />
-      </div>
-      <div id="otro2" className="profile">
-      <Perfil 
-        nombre='Brais Moure'
-        pais='España'
-        imagen='brais'
-        cargo='Ingeniero de Software'
-        empresa='MoureDev'
-        perfil='Es un Youtuber español, es el fundador de la empresa de desarrollo de software MoureDev'
-        linkedin='https://www.linkedin.com/in/braismoure/'
-        youtube='https://www.youtube.com/@mouredev'
-        twitter='https://twitter.com/mouredev/'
+      <Perfil
+        nombre='Simplilearn'
+        pais='India'
+        imagen='simplilearn'
+        cargo='Profesional en Tecnología'
+        empresa='Simplilearn '
+        resena='Simplilearn le ofrece a sus usuarios unos 400 cursos diferentes acreditados. Los cursos son de alta calidad, y le ofrecen a los estudiantes información útil y que impulsará su carrera. Dicho esto, algunas clases de la plataforma son de pago, y el número de cursos en sí, puede dejar mucho que desear.'
       />
       </div>
       
